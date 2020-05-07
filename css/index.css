@@ -1,0 +1,50 @@
+.container .title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#word {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+aside {
+  text-align: center;
+}
+
+.letter {
+  text-align: center;
+  display: inline-block;
+  width: 1.2rem;
+  /* height: 1rem; */
+  margin: .2rem;
+  border-bottom: 1px solid black;
+  font-size: 1rem;
+}
+
+.space {
+  display: inline-block;
+}
+
+.keyboard {
+  width: 2.1rem;
+  height: 2.1rem;
+  margin-right: .3rem;
+  margin-bottom: .3rem;
+  font-size: 1em;
+}
+
+img {
+  max-height:65vh;
+}
+
+@media screen and (max-width: 640px) {
+  img {
+    max-height: calc(100vh - 450px);
+  }
+  .letter {
+    font-size: 1.3em;
+    width: 1.4rem;
+    margin: .3rem;
+  }
+}
