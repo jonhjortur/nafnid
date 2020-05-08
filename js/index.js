@@ -67,6 +67,8 @@ $(document).ready(function() {
     correctLetters = [];
     wrongLetters = [];
     wrongTryCounter = 0;
+  guess('q')
+
 
     // clean the keyboard
     for (let i = 65; i <= 90; i++){
@@ -121,7 +123,6 @@ $(document).ready(function() {
       gameOver('WON');
     }
   }
-  guess('q')
   // listen to the click buttons
   document.querySelectorAll('.btn').forEach(btn => {
     btn.addEventListener('click', event => {
