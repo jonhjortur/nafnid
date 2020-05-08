@@ -154,8 +154,8 @@ $(document).ready(function() {
       if (!wrongLetters.includes(chosenLetter)) {
         wrongLetters.push(chosenLetter);
         $(`#${chosenLetter}`).addClass('btn-danger disabled').removeClass('btn-outline-secondary');
-        wrongTryCounter += 1;
-        if (wrongTryCounter === 2) {
+        wrongTryCounter += 2;
+        if (wrongTryCounter === 6) {
           gameOver('LOST');
           console.log(mysteryWord)
           console.log(myWord)
