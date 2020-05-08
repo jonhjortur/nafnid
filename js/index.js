@@ -121,7 +121,7 @@ $(document).ready(function() {
       gameOver('WON');
     }
   }
-  
+  guess('q')
   // listen to the click buttons
   document.querySelectorAll('.btn').forEach(btn => {
     btn.addEventListener('click', event => {
